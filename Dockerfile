@@ -2,9 +2,9 @@ FROM nkeating/java-minimal
 
 MAINTAINER Noel Keating
 
-ENV ZOOKEEPER_VERSION 3.4.6
-
 RUN apk --update add bash
+
+ENV ZOOKEEPER_VERSION 3.4.6
 
 RUN /usr/sbin/adduser -s /sbin/nologin -D -H zookeeper zookeeper
 
